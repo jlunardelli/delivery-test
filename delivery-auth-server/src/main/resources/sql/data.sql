@@ -1,3 +1,5 @@
+USE delivery;
+
 DELETE FROM oauth_client_details;
 
 INSERT INTO user (username, email, password, activated)

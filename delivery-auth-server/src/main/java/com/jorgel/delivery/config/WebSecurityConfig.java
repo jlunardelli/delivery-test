@@ -17,7 +17,7 @@ import com.jorgel.delivery.service.UserDetailsService;
 @Configuration
 @EnableWebSecurity
 //@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-//@Order(SecurityProperties.BASIC_AUTH_ORDER)
+@Order(SecurityProperties.DEFAULT_FILTER_ORDER)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
